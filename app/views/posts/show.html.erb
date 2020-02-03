@@ -9,9 +9,3 @@
 <% @post.comments.each do |comment| %>
 <%= comment %>
 <% end %>
-
-<%= form_for @post do |f| %>
-  <%= f.label "Comment" %>
-  <%= f.text_area :comment %>
-  <%= f.submit %>
-<% end %>
