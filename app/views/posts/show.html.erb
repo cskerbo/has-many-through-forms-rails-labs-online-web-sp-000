@@ -3,7 +3,7 @@
 
 <h3>
   <ul>
-    <%= @post.categories.each do |category| %>
+    <% @post.categories.each do |category| %>
       <li><%= link_to(category.name, category) %></li>
     <% end %>
   </ul>
