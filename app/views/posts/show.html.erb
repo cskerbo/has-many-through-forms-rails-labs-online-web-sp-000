@@ -2,9 +2,11 @@
 
 <%= @post.content %>
 
-<% @post.categories.each do |category| %>
-<%= category %>
-<% end %>
+<ul>
+   <%= @post.categories.each do |category| %>
+     <li><%= link_to(category.name, category) %></li>
+   <% end %>
+</ul>
 
 <% @post.comments.each do |comment| %>
 <%= comment %>
