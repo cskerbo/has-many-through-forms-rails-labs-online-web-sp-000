@@ -2,10 +2,10 @@
 
 <%= @post.content %>
 
-<% @post.category.each do |category| %>
+<% @post.categories.each do |category| %>
 <%= category %>
 <% end %>
 
-<% @post.comment.each do |comment| %>
+<% @post.comments.each do |comment| %>
 <%= comment %>
 <% end %>
